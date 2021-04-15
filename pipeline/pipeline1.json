@@ -63,7 +63,13 @@
 							"outputs": [
 								{
 									"referenceName": "SupplyQualitySQLDB",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"tablename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
