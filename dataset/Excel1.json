@@ -20,7 +20,8 @@
 			"location": {
 				"type": "FileServerLocation",
 				"fileName": "SupplyQualityAnalysis.xlsx"
-			}
+			},
+			"firstRowAsHeader": true
 		},
 		"schema": []
 	}
