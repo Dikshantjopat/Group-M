@@ -165,7 +165,16 @@
 										"secureOutput": false,
 										"secureInput": false
 									},
-									"userProperties": [],
+									"userProperties": [
+										{
+											"name": "Source",
+											"value": "/SupplyQualityAnalysis.xlsx"
+										},
+										{
+											"name": "Destination",
+											"value": "dbo.@{item().name}"
+										}
+									],
 									"typeProperties": {
 										"source": {
 											"type": "ExcelSource",
