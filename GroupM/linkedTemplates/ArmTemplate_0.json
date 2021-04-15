@@ -146,7 +146,14 @@
 					{
 						"name": "ForEach1",
 						"type": "ForEach",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "Stored procedure1",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"userProperties": [],
 						"typeProperties": {
 							"items": {
@@ -216,6 +223,26 @@
 								}
 							]
 						}
+					},
+					{
+						"name": "Stored procedure1",
+						"type": "SqlServerStoredProcedure",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"storedProcedureName": "[[dbo].[TruncateTable]"
+						},
+						"linkedServiceName": {
+							"referenceName": "OutputSQLDBLS",
+							"type": "LinkedServiceReference"
+						}
 					}
 				],
 				"parameters": {
@@ -252,6 +279,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/OutputSQLDBLS')]",
 				"[concat(variables('factoryId'), '/datasets/Excel1')]",
 				"[concat(variables('factoryId'), '/datasets/SupplyQualitySQLDB')]"
 			]
