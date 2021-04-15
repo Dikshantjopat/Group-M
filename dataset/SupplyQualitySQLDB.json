@@ -1,0 +1,12 @@
+{
+	"name": "SupplyQualitySQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OutputSQLDBLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
