@@ -7,7 +7,7 @@
 		"typeProperties": {
 			"host": "D:\\CASE_STUDY Project 1\\DATA\\",
 			"userId": "Lenovo",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhZWRmNGQ1ZS01MTBmLTQ3NTctYmU1Ni03ZWVjNzE3MTVkMmIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1YTQyOTY5ZS1jMzNhLTRhOTEtYWZiMS0wZjM5YzE0ZGIxZGMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "GroupMIR",
